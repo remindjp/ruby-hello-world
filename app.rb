@@ -6,8 +6,7 @@ set :bind, '0.0.0.0'
 set :port, 8080
 # supposed to modify hello world.. where is this????
 get '/' do:
-  "Hello World"+
-  "Testing"
+  "Hello World"
 end
 
 def configure_database
