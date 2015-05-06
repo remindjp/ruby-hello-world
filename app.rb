@@ -7,7 +7,7 @@ set :port, 8080
 # supposed to modify hello world.. where is this????
 get '/' do
   "Hello World! Welcome to Las Vegas!\n"+
-#
+# 
 #
   "User is #{ENV['ADMIN_USERNAME']}\n"
 end
