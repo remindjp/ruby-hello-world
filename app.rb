@@ -5,7 +5,12 @@ require_relative 'models'
 set :bind, '0.0.0.0'
 set :port, 8080
 # supposed to modify hello world.. where is this????
-puts "HELLO WORLD"
+get '/' do
+  "Hello World! Welcome to Las Vegas!\n"+
+#
+#
+  "User is #{ENV['ADMIN_USERNAME']}\n"
+end
 
 def configure_database
   if ENV['RACK_ENV']=="production"
